@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: hidden;
+    cursor: none !important;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+#page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    color: #4c4f69;
+}
+
+.dark #page {
+    color: #cdd6f4;
+}
+
+#contact, #links, #info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+}
+
+.fa-solid, .fa-brands {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#left-column {
+    width: 20%;
+    background-color: #ccd0da;
+    height: 100vh;
+    transition: 0.25s;
+}
+
+.dark #left-column {
+    background-color: #313244;
+    transition: 0.25s;
+}
+
+#main-content {
+    padding: 20px;
+    width: 80%;
+    background-color: #eff1f5;
+    height: 100vh;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dark #main-content {
+    background-color: #1e1e2e;
+    transition: 0.25s;
+}
+
+#contactTitle, #linksTitle, #infoTitle {
+    margin-bottom: 10px;
+    border-bottom: #4c4f69 solid 2px;
+}
+
+#darkModeButton {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    color: #5c5f77;
+    cursor: pointer;
+    transition: 0.25s;
+    transition-property: transform, color;
+}
+
+#darkModeButton:hover {
+    color: #4c4f69;
+    transform: scale(1.1);
+    transition: 0.25s;
+    transition-property: transform, color;
+}
+
+.dark #darkModeButton {
+    color: #bac2de;
+    transition: 0.25s;
+    transition-property: transform, color;
+}
+
+.dark #darkModeButton:hover {
+    color: #cdd6f4;
+    transform: scale(1.1);
+    transition: 0.25s;
+    transition-property: transform, color;
+}
+
+#mainTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    border-bottom: #4c4f69 solid 3px;
+    transition: 0.25s;
+    transition-property: border-bottom;
+}
+
+.dark #mainTitle {
+    border-bottom: #cdd6f4 solid 3px;
+    transition: 0.25s;
+    transition-property: border-bottom;
+}
+
+.mainColumns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columnItem {
+    width: 100%;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    transition: 0.25s;
+    transition-property: transform, border-bottom;
+    cursor: none;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    border-bottom: #4c4f69 solid 2px;
+    cursor: none;
+}
+
+.dark button:hover {
+    border-bottom: #cdd6f4 solid 2px;
+    cursor: none;
+}
+
+#cursor {
+    width: 5px;
+    height: 5px;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #1e1e2e;
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    transition: 0.25s;
+    transition-property: border, transform, background-color;
+}
+
+.dark #cursor {
+    border: 2px solid #eff1f5;
+    transition: 0.25s;
+    transition-property: border, transform, background-color;
+}
+
+#cursor.clicked {
+    transform: scale(1.5);
+    transition: 0.25s;
+    transition-property: border, transform, background-color;
+}
+
+.dark #cursor.hovered {
+    background-color: #eff1f5;
+    transition: 0.25s;
+    transition-property: border, transform, background-color;
+}
+
+#cursor.hovered {
+    background-color: #1e1e2e;
+    transition: 0.25s;
+    transition-property: border, transform, background-color;
+}
+
+#popup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    font-family: "Lato", sans-serif;
+    color: #4c4f69;
+    border-radius: 5px;
+    transition: 0.25s;
+    transition-property: color, background-color, opacity;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark #popup {
+    color: #cdd6f4;
+    transition: 0.25s;
+    transition-property: color, background-color, opacity;
+}
+
+#popup.show {
+    opacity: 1;
+}
+
+.fa-circle-info {
+    margin: 5px;
+}

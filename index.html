@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Moon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="popup">
+        <i class="fa-solid fa-circle-info"></i>
+        <h2 id="popupTitle">Copied to clipboard</h2>
+    </div>
+    <div id="page">
+        <div id="left-column">
+            <button id="darkModeButton" onclick="toggleDark()"><i id="darkModeIcon" class="fa-solid fa-moon"></i></button>
+            <div id="info">
+                <h2 id="infoTitle">Info</h2>
+                <h4 id="name">Name: Ben Moon</h4>
+                <h4 id="age">Age: 16</h4>
+                <h4 id="pronouns">Pronouns: They/Them</h4>
+            </div>
+            <div id="contact">
+                <h2 id="contactTitle">Contact</h3>
+                <div class="info">
+                    <i class="fa-solid fa-phone info"></i>
+                    <button id="phone" onclick="copy(this.id)"><h4>+1 403-493-9072</h4></button>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-envelope info"></i>
+                    <button id="email" onclick="copy(this.id)"><h4>benmoon372@gmail.com</h4></button>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot info"></i>
+                    <button id="address" onclick="copy(this.id)"><h4>5828 Dalkeith Hill NW, Calgary</h4></button>
+                </div>
+            </div>
+            <div id="links">
+                <h2 id="linksTitle">Links</h3>
+                <div class="info">
+                    <i class="fa-solid fa-globe info"></i>
+                    <button id="website" onclick="window.location.href = 'https://benmoon.me'"><h4>Website</h4></button>
+                </div>
+                <div class="info">
+                    <i class="fa-brands fa-github info"></i>
+                    <button id="github" onclick="window.location.href = 'https://github.com/boxit379'"><h4>Github</h4></button>
+                </div>
+            </div>
+        </div>
+        <div id="main-content">
+            <h1 id="mainTitle">Ben Moon</h2>
+            <div class="mainColumns">
+                <div class="columnItem" id="objective">
+                    <h2>Objective</h2>
+                    <p>An experienced web developer looking to collaborate with clients to create high quality, user-friendly websites using my strong understanding of HTML, CSS, and Javascript.</p>
+                </div>
+                <div class="columnItem" id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML, CSS, and Javascript</li>
+                        <li>Git and Github</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="mainColumns">
+                <div class="columnItem" id="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            <h4>STEM Innovation Academy</h4>
+                            <p>High School | August 2022 - Present</p>
+                        </li>
+                        <li>
+                            <h4>Maria Montessori Education Centre - Erdkinder</h4>
+                            <p>Junior High | 2019 - 2022</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columnItem" id="experience">
+                    <h2>Experience</h2>
+                    <p>I have been learning web development for over 3 years now, working on various projects and contributing to Github repositories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bfaa57d2a3.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

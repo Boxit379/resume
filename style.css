@@ -162,6 +162,7 @@ button {
     transition: 0.25s;
     transition-property: transform, border-bottom;
     cursor: none;
+    text-decoration: none;
 }
 
 button:hover {
